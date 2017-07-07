@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.css';
 import './App.css';
 import Page from './components/Page';
+import Card from './components/Card';
 
 class App extends Component {
   render() {
@@ -74,12 +75,7 @@ class App extends Component {
 							    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 							    <a href="#" className="special">Learn more</a>
 						    </article>
-						    <article>
-							    <a href="#" className="image"><img src="images/pic07.jpg" alt="" /></a>
-							    <h3 className="major">Fusce consequat</h3>
-							    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-							    <a href="#" className="special">Learn more</a>
-						    </article>
+						    <Card imgSrc="images/pic07.jpg" imgAlt="test image alt" title="Test title here" desc="Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices." to="/nowhere"/>
 					    </section>
 					    <ul className="actions">
 						    <li><a href="#" className="button">Browse All</a></li>
