@@ -1,0 +1,22 @@
+{
+  "name": "solid-state-react",
+  "description": "HTML5 UP's Solid State theme enhanced with React.",
+  "author": "Carlos Filoteo (@filoxo)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filoxo/solid-state-react.git"
+  },
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
