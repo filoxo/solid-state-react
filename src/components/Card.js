@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Card.css';
 
 export default class Card extends Component {
   render() {
@@ -14,20 +15,22 @@ export default class Card extends Component {
 	  }
 
     return (
-	    <article>
+	    <article className="Card">
 		    { img }
-		    {
-		    	title !== undefined &&
-			    <h3 className="major">{title}</h3>
-		    }
-		    {
-		    	desc !== undefined &&
-			    <p>{desc}</p>
-		    }
-		    {
-		    	to !== undefined &&
-			    <a href={to} className="special">Learn more</a>
-		    }
+		    <div className="CardContent">
+			    {
+				    title !== undefined &&
+				    <h3 className="major">{title}</h3>
+			    }
+			    {
+				    desc !== undefined &&
+				    <p>{desc}</p>
+			    }
+			    {
+				    to !== undefined &&
+				    <a href={to} className="special">Learn more</a>
+			    }
+		    </div>
 	    </article>
     );
   }

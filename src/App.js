@@ -82,6 +82,9 @@ class App extends Component {
 					    </ul>
 				    </div>
 			    </section>
+			    <section>
+				    <Card imgSrc="images/pic07.jpg" imgAlt="test image alt" title="Test title here" desc="Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices." to="/nowhere"/>
+			    </section>
 		    </main>
 	    </Page>
     );
