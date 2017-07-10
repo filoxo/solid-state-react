@@ -1,6 +1,6 @@
 .Section {
 	background-color: #2e3141;
-	margin: 1.5em 0;
+	margin: 2.5em 0;
 	position: relative;
 }
 .SectionContent {
@@ -13,17 +13,17 @@
 .Section[class*="style"]::after {
 	content: '';
 	display: block;
-	height: 1.5em;
+	height: 2.5em;
 	position: absolute;
 	width: 100%;
 }
 .Section[class*="style"].right::before,
 .Section[class*="style"].left::before{
-	top: -1.5em;
+	top: -2.5em;
 }
 .Section[class*="style"].right::after,
 .Section[class*="style"].left::after {
-	bottom: -1.5em;
+	bottom: -2.5em;
 }
 /* Style1 */
 .Section.style1 {
@@ -75,18 +75,36 @@
 }
 @media screen and (min-width: 736px) {
 	.Section {
-		margin: 2.5em 0;
+		margin: 4.75em 0;
 	}
 	.Section[class*="style"]::before,
 	.Section[class*="style"]::after {
-		height: 2.5em;
+		height: 4.75em;
 	}
 	.Section[class*="style"].right::before,
 	.Section[class*="style"].left::before{
-		top: -2.5em;
+		top: -4.75em;
 	}
 	.Section[class*="style"].right::after,
 	.Section[class*="style"].left::after{
-		bottom: -2.5em;
+		bottom: -4.75em;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.Section {
+		margin: 6.5em 0;
+	}
+	.Section[class*="style"]::before,
+	.Section[class*="style"]::after {
+		height: 6.5em;
+	}
+	.Section[class*="style"].right::before,
+	.Section[class*="style"].left::before{
+		top: -6.5em;
+	}
+	.Section[class*="style"].right::after,
+	.Section[class*="style"].left::after{
+		bottom: -6.5em;
 	}
 }
