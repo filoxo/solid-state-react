@@ -1,0 +1,88 @@
+.Section {
+	margin: 1.5em 0;
+	position: relative;
+}
+.SectionContent {
+	padding: 1em;
+}
+/* Style1 */
+.Section.style1 {
+	background-color: #4c5c96;
+}
+.Section[class*="style"]::before,
+.Section[class*="style"]::after {
+	content: '';
+	display: block;
+	height: 1.5em;
+	position: absolute;
+	width: 100%;
+}
+.Section.style1.right::before {
+	background: linear-gradient(to bottom right, transparent 50%, #4c5c96 50%);
+	top: -1.5em;
+}
+.Section.style1.right::after {
+	background: linear-gradient(to top right, transparent 50%, #4c5c96 50%);
+	bottom: -1.5em;
+}
+.Section.style1.left::before {
+	background: linear-gradient(to bottom left, transparent 50%, #4c5c96 50%);
+	top: -1.5em;
+}
+.Section.style1.left::after {
+	background: linear-gradient(to top left, transparent 50%, #4c5c96 50%);
+	bottom: -1.5em;
+}
+/* Style2 */
+.Section.style2 {
+	background-color: #45558d;
+}
+.Section.style2.right::before {
+	background: linear-gradient(to bottom right, transparent 50%, #45558d 50%);
+}
+.Section.style2.right::after {
+	background: linear-gradient(to top right, transparent 50%, #45558d 50%);
+}
+.Section.style2.left::before {
+	background: linear-gradient(to bottom left, transparent 50%, #45558d 50%);
+}
+.Section.style2.left::after {
+	background: linear-gradient(to top left, transparent 50%, #45558d 50%);
+}
+/* Style3 */
+.Section.style3 {
+	background-color: #3f4e85;
+}
+.Section.style3.right::before {
+	background: linear-gradient(to bottom right, transparent 50%, #3f4e85 50%);
+}
+.Section.style3.right::after {
+	background: linear-gradient(to top right, transparent 50%, #3f4e85 50%);
+}
+.Section.style3.left::before {
+	background: linear-gradient(to bottom left, transparent 50%, #3f4e85 50%);
+}
+.Section.style3.left::after {
+	background: linear-gradient(to top left, transparent 50%, #3f4e85 50%);
+}
+@media screen and (min-width: 736px) {
+	.Section {
+		margin: 2.5em 0;
+	}
+	.Section[class*="style"]::before,
+	.Section[class*="style"]::after {
+		height: 2.5em;
+	}
+	.Section[class*="style"].right::before {
+		top: -2.5em;
+	}
+	.Section[class*="style"].right::after {
+		bottom: -2.5em;
+	}
+	.Section[class*="style"].left::before {
+		top: -2.5em;
+	}
+	.Section[class*="style"].left::after {
+		bottom: -2.5em;
+	}
+}
