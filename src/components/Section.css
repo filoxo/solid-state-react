@@ -6,10 +6,7 @@
 .SectionContent {
 	padding: 1em;
 }
-/* Style1 */
-.Section.style1 {
-	background-color: #4c5c96;
-}
+/* Alt styles base */
 .Section[class*="style"]::before,
 .Section[class*="style"]::after {
 	content: '';
@@ -18,21 +15,29 @@
 	position: absolute;
 	width: 100%;
 }
+.Section[class*="style"].right::before,
+.Section[class*="style"].left::before{
+	top: -1.5em;
+}
+.Section[class*="style"].right::after,
+.Section[class*="style"].left::after {
+	bottom: -1.5em;
+}
+/* Style1 */
+.Section.style1 {
+	background-color: #4c5c96;
+}
 .Section.style1.right::before {
 	background: linear-gradient(to bottom right, transparent 50%, #4c5c96 50%);
-	top: -1.5em;
 }
 .Section.style1.right::after {
 	background: linear-gradient(to top right, transparent 50%, #4c5c96 50%);
-	bottom: -1.5em;
 }
 .Section.style1.left::before {
 	background: linear-gradient(to bottom left, transparent 50%, #4c5c96 50%);
-	top: -1.5em;
 }
 .Section.style1.left::after {
 	background: linear-gradient(to top left, transparent 50%, #4c5c96 50%);
-	bottom: -1.5em;
 }
 /* Style2 */
 .Section.style2 {
@@ -74,16 +79,12 @@
 	.Section[class*="style"]::after {
 		height: 2.5em;
 	}
-	.Section[class*="style"].right::before {
+	.Section[class*="style"].right::before,
+	.Section[class*="style"].left::before{
 		top: -2.5em;
 	}
-	.Section[class*="style"].right::after {
-		bottom: -2.5em;
-	}
-	.Section[class*="style"].left::before {
-		top: -2.5em;
-	}
-	.Section[class*="style"].left::after {
+	.Section[class*="style"].right::after,
+	.Section[class*="style"].left::after{
 		bottom: -2.5em;
 	}
 }
