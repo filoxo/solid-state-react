@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.css';
 import './App.css';
 import Page from './components/Page';
+import Header from './components/Header';
+import MenuNav from './components/MenuNav';
 import Card from './components/Card';
 import Section from './components/Section';
 import Spotlight from './components/Spotlight';
@@ -10,12 +12,10 @@ class App extends Component {
   render() {
     return (
 	    <Page>
-		    <header id="header" className="alt">
+		    <Header>
 			    <h1>Solid State</h1>
-			    <nav>
-				    <a href="#menu">Menu</a>
-			    </nav>
-		    </header>
+					<MenuNav/>
+		    </Header>
 		    <section id="banner">
 			    <div className="inner">
 				    <div className="logo"><span className="icon fa-diamond"></span></div>
