@@ -1,0 +1,33 @@
+.Spotlight {
+	display: block;
+}
+.Spotlight.right {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+.Spotlight .image {
+	width: 12em;
+}
+.Spotlight.right .image {
+	margin-left: 2em;
+}
+.Spotlight.left .image {
+	margin-right: 2em;
+}
+.Spotlight .image img {
+	border-radius: 100%;
+	width: 100%;
+}
+.Spotlight .content {
+	width: 100%;
+	-ms-flex: 2;
+}
+@media screen and (min-width: 640px) {
+	.Spotlight {
+		display: flex;
+		align-items: center;
+	}
+	.Spotlight .image {
+		width: 19em;
+	}
+}

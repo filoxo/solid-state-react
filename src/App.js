@@ -4,6 +4,7 @@ import './App.css';
 import Page from './components/Page';
 import Card from './components/Card';
 import Section from './components/Section';
+import Spotlight from './components/Spotlight';
 
 class App extends Component {
   render() {
@@ -24,28 +25,13 @@ class App extends Component {
 		    </section>
 		    <main id="wrapper">
 			    <Section id="one" style1 right>
-				    <a href="#" className="image"><img src="/images/pic01.jpg" alt="" /></a>
-				    <div className="content">
-					    <h2 className="major">Magna arcu feugiat</h2>
-					    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-					    <a href="#" className="special">Learn more</a>
-				    </div>
+				    <Spotlight img="/images/pic01.jpg" title="Magna arcu feugiat" desc="Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus." to="/noneya"/>
 			    </Section>
 			    <Section id="two" style2 left>
-				    <a href="#" className="image"><img src="/images/pic01.jpg" alt="" /></a>
-				    <div className="content">
-					    <h2 className="major">Magna arcu feugiat</h2>
-					    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-					    <a href="#" className="special">Learn more</a>
-				    </div>
+				    <Spotlight left img="/images/pic02.jpg" title="asdfasdfasdfasdf" desc="Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus." to="/noneya"/>
 			    </Section>
 			    <Section id="three" style3 right>
-				    <a href="#" className="image"><img src="images/pic03.jpg" alt="" /></a>
-				    <div className="content">
-					    <h2 className="major">Nullam dignissim</h2>
-					    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-					    <a href="#" className="special">Learn more</a>
-				    </div>
+				    <Spotlight img="/images/pic03.jpg" title="Nullam dignissim" desc="Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus." to="/noneya"/>
 			    </Section>
 			    <Section id="four">
 				    <h2 className="major">Vitae phasellus</h2>
