@@ -1,0 +1,58 @@
+.menuNav {
+	font-size: 0.8em;
+	font-weight: 700;
+	height: 3em;
+	letter-spacing: 0.1em;
+	line-height: 3em;
+	position: absolute;
+	right: 0.7em;
+	text-transform: uppercase;
+	top: 0.7em;
+}
+.menuTrigger {
+	text-decoration: none;
+	transition: background-color 0.2s ease-in-out;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
+	padding: 0 1.35em;
+}
+.menu {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	pointer-events: none;
+	transition: opacity 0.35s ease, visibility 0.35s;
+	user-select: none;
+	background: rgba(46, 49, 65, 0.8);
+	cursor: default;
+	height: 100vh;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	visibility: hidden;
+	width: 100vw;
+}
+
+.menu.visible {
+	pointer-events: auto;
+	opacity: 1;
+	visibility: visible;
+}
+.menu .inner {
+	padding: 2.5em 1.5em 0.5em 1.5em;
+	transform: translateY(0.5em);
+	transition: opacity 0.35s ease, transform 0.35s ease;
+	background: #4c5c96;
+	border-radius: 5px;
+	display: block;
+	max-width: 100%;
+	opacity: 0;
+	position: relative;
+	width: 18em;
+}
+.menu.visible .inner {
+	transform: translateY(0);
+	opacity: 1;
+}
