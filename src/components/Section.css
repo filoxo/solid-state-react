@@ -6,7 +6,7 @@
 .SectionContent {
 	margin: 0 auto;
 	max-width: 55em;
-	padding: 1em;
+	padding: 2em 0;
 }
 /* Alt styles base */
 .Section[class*="style"]::before,
@@ -88,6 +88,9 @@
 	.Section[class*="style"].right::after,
 	.Section[class*="style"].left::after{
 		bottom: -4.75em;
+	}
+	.SectionContent {
+		padding: 3em 0;
 	}
 }
 
