@@ -4,6 +4,8 @@
 	position: relative;
 }
 .SectionContent {
+	margin: 0 auto;
+	max-width: 55em;
 	padding: 1em;
 }
 /* Alt styles base */
