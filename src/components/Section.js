@@ -5,7 +5,7 @@ const Section = (props) => {
 	let classNames = ['Section']
 	if(!!props.right) classNames.push('right')
 	if(!!props.left) classNames.push('left')
-	if(props.style === undefined || (!!props.style1 && !props.style2 && !props.style3)) classNames.push('style1')
+	if(!!props.style1) classNames.push('style1')
 	if(!!props.style2) classNames.push('style2')
 	if(!!props.style3) classNames.push('style3')
 
