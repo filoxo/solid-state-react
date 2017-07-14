@@ -6,18 +6,22 @@ class Header extends Component {
 		this.state = {showHeader: false}
 		this.handleScroll = this.handleScroll.bind(this)
 	}
-	handleScroll = this.debounce((event) => {
+	handleScroll = this.throttle((event) => {
 		let { scrollTop } = event.srcElement.body
 		this.setState({showHeader: scrollTop > 50})
-	}, 50)
-	debounce(callback, wait, context = this) {
+	}, 100)
+	throttle(callback, wait, context = this) {
 		let timeout = null
 		let callbackArgs = null
-		const later = () => callback.apply(context, callbackArgs)
+		const later = () => {
+			callback.apply(context, callbackArgs)
+			timeout = null
+		}
 		return function() {
-			callbackArgs = arguments
-			clearTimeout(timeout)
-			timeout = setTimeout(later, wait)
+			if (!timeout) {
+				callbackArgs = arguments
+				timeout = setTimeout(later, wait)
+			}
 		}
 	}
 	componentDidMount() {
