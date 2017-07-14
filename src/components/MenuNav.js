@@ -15,7 +15,7 @@ class Modal extends Component {
 			<FocusTrap>
 				<div className="backdrop">
 					<nav>
-						<div className="inner">
+						<div className="menu">
 							{this.props.children}
 							<button className="close" type="button" onClick={this.props.closePortal}>Close</button>
 						</div>
