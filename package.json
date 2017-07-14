@@ -12,6 +12,8 @@
     "font-awesome": "^4.7.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-focus-trap": "^2.4.0",
+    "react-portal-minimal": "^4.0.2",
     "react-scripts": "1.0.10"
   },
   "scripts": {
