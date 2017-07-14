@@ -1,0 +1,90 @@
+#header {
+	background-color: rgba(53, 56, 73, 0.95);
+	display: flex;
+	height: 3.5em;
+	justify-content: space-between;
+	left: 0;
+	line-height: 3.5em;
+	padding: 0 1.25em;
+	position: fixed;
+	top: 0;
+	transition: background-color 0.2s ease-in-out;
+	width: 100vw;
+	z-index: 1;
+}
+
+#header h1 {
+	border-bottom: 0;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-bottom: 0;
+	opacity: 1;
+	transition: opacity 0.2s ease-in-out, visibility 0.2s;
+	visibility: visible;
+}
+
+#header h1 a {
+	border: 0;
+}
+
+#header.alt {
+	background-color: transparent;
+}
+
+#header.alt h1 {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@media screen and (max-width: 736px) {
+
+	#header {
+		height: 2.75em;
+		line-height: 2.75em;
+	}
+
+	#header nav {
+		top: 0;
+		right: 0;
+		height: inherit;
+		line-height: inherit;
+	}
+
+	#header nav a {
+		height: inherit;
+		line-height: inherit;
+	}
+
+	#header nav a[href="#menu"] {
+		box-shadow: none;
+		padding: 0 1em;
+		border-radius: 0;
+	}
+
+	#header nav a[href="#menu"]:hover, #header nav a[href="#menu"]:active {
+		background-color: inherit;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	#header nav a[href="#menu"] {
+		width: 4em;
+		white-space: nowrap;
+		text-indent: 4em;
+		position: relative;
+	}
+
+	#header nav a[href="#menu"]:before {
+		width: inherit;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-indent: 0;
+		text-align: right;
+		margin-left: 0;
+		padding-right: 1.25em;
+	}
+
+}
