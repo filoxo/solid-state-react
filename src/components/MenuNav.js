@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Portal from 'react-portal-minimal';
+import FocusTrap from 'react-focus-trap';
 import './MenuNav.css';
 
 class Modal extends Component {
@@ -11,14 +12,16 @@ class Modal extends Component {
 	}
 	render() {
 		return (
-			<div className="backdrop">
-				<nav>
-					<div className="inner">
-						{this.props.children}
-						<button className="close" type="button" onClick={this.props.closePortal}>Close</button>
-					</div>
-				</nav>
-			</div>
+			<FocusTrap>
+				<div className="backdrop">
+					<nav>
+						<div className="inner">
+							{this.props.children}
+							<button className="close" type="button" onClick={this.props.closePortal}>Close</button>
+						</div>
+					</nav>
+				</div>
+			</FocusTrap>
 		);
 	}
 }
