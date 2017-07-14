@@ -5,10 +5,10 @@ import './MenuNav.css';
 
 class Modal extends Component {
 	componentDidMount() {
-		document.body.style.overflow = 'hidden';
+		document.body.classList.add('blur');
 	}
 	componentWillUnmount() {
-		document.body.style.overflow = '';
+		document.body.classList.remove('blur');
 	}
 	render() {
 		return (

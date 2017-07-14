@@ -1,3 +1,10 @@
+body.blur {
+	overflow: hidden;
+}
+body.blur > #root {
+	filter: blur(1.5px);
+}
+
 .menu {
 	padding: 1.5em;
 	background: #4c5c96;
