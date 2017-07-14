@@ -1,5 +1,27 @@
 import React, { Component } from 'react';
+import Portal from 'react-portal-minimal';
 import './MenuNav.css';
+
+class Modal extends Component {
+	componentDidMount() {
+		document.body.style.overflow = 'hidden';
+	}
+	componentWillUnmount() {
+		document.body.style.overflow = '';
+	}
+	render() {
+		return (
+			<div className="backdrop">
+				<nav>
+					<div className="inner">
+						{this.props.children}
+						<button className="close" type="button" onClick={this.props.closePortal}>Close</button>
+					</div>
+				</nav>
+			</div>
+		);
+	}
+}
 
 class MenuNav extends Component {
 	constructor(props) {
@@ -9,26 +31,26 @@ class MenuNav extends Component {
 	}
 	toggleMenu(state) {
 		const showMenu = state || false;
-		console.log('showMenu', showMenu)
 		this.setState({showMenu})
 	}
   render() {
     return (
     	<span className="menuNav">
 		    <button className="menuTrigger" type="button" onClick={() => this.toggleMenu(true)}>Menu</button>
-		    <nav className={"menu" + (this.state.showMenu ? " visible" : "")}>
-			    <div className="inner">
+		    {this.state.showMenu &&
+		    <Portal>
+			    <Modal closePortal={() => this.toggleMenu(false)}>
 				    <h2>Menu</h2>
-				    <ul className="links">
+				    <ul className="links" autoFocus>
 					    <li><a href="index.html">Home</a></li>
 					    <li><a href="generic.html">Generic</a></li>
 					    <li><a href="elements.html">Elements</a></li>
 					    <li><a href="#">Log In</a></li>
 					    <li><a href="#">Sign Up</a></li>
 				    </ul>
-				    <button className="close" type="button" onClick={() => this.toggleMenu(false)}>Close</button>
-			    </div>
-		    </nav>
+			    </Modal>
+		    </Portal>
+		    }
 	    </span>
     );
   }
