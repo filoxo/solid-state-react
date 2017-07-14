@@ -12,16 +12,16 @@ class Modal extends Component {
 	}
 	render() {
 		return (
-			<FocusTrap>
-				<div className="backdrop">
-					<nav>
-						<div className="menu">
+			<div className="backdrop" onClick={this.props.closePortal}>
+				<nav>
+					<FocusTrap>
+						<div className="menu focus-trap">
 							{this.props.children}
 							<button className="close" type="button" onClick={this.props.closePortal}>Close</button>
 						</div>
-					</nav>
-				</div>
-			</FocusTrap>
+					</FocusTrap>
+				</nav>
+			</div>
 		);
 	}
 }
@@ -41,7 +41,7 @@ class MenuNav extends Component {
     	<span className="menuNav">
 		    <button className="menuTrigger" type="button" onClick={() => this.toggleMenu(true)}>Menu</button>
 		    {this.state.showMenu &&
-		    <Portal>
+		    <Portal closeOnEsc={true}>
 			    <Modal closePortal={() => this.toggleMenu(false)}>
 				    <h2>Menu</h2>
 				    <ul className="links" autoFocus>
