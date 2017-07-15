@@ -33,7 +33,7 @@ class Header extends Component {
 	}
   render() {
     return (
-	    <header id="header" className={this.state.showHeader ? '' : 'alt'}>
+	    <header className={'Header' + (this.state.showHeader ? '' : ' alt')}>
 		    {this.props.children}
 	    </header>
     );
