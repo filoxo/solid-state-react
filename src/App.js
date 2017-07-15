@@ -33,8 +33,8 @@ class App extends Component {
 					    <li><a href="index.html">Home</a></li>
 					    <li><a href="generic.html">Generic</a></li>
 					    <li><a href="elements.html">Elements</a></li>
-					    <li><a href="#">Log In</a></li>
-					    <li><a href="#">Sign Up</a></li>
+					    <li><a>Log In</a></li>
+					    <li><a>Sign Up</a></li>
 				    </ul>
 			    </Menu>
 		    }
@@ -60,27 +60,27 @@ class App extends Component {
 				    <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 				    <section className="features">
 					    <article>
-						    <a href="#" className="image"><img src="images/pic04.jpg" alt="" /></a>
+						    <a className="image"><img src="images/pic04.jpg" alt="" /></a>
 						    <h3 className="major">Sed feugiat lorem</h3>
 						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-						    <a href="#" className="special">Learn more</a>
+						    <a className="special">Learn more</a>
 					    </article>
 					    <article>
-						    <a href="#" className="image"><img src="images/pic05.jpg" alt="" /></a>
+						    <a className="image"><img src="images/pic05.jpg" alt="" /></a>
 						    <h3 className="major">Nisl placerat</h3>
 						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-						    <a href="#" className="special">Learn more</a>
+						    <a className="special">Learn more</a>
 					    </article>
 					    <article>
-						    <a href="#" className="image"><img src="images/pic06.jpg" alt="" /></a>
+						    <a className="image"><img src="images/pic06.jpg" alt="" /></a>
 						    <h3 className="major">Ante fermentum</h3>
 						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-						    <a href="#" className="special">Learn more</a>
+						    <a className="special">Learn more</a>
 					    </article>
 					    <Card imgSrc="images/pic07.jpg" imgAlt="test image alt" title="Test title here" desc="Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices." to="/nowhere"/>
 				    </section>
 				    <ul className="actions">
-					    <li><a href="#" className="button">Browse All</a></li>
+					    <li><a className="button">Browse All</a></li>
 				    </ul>
 			    </Section>
 		    </main>
@@ -112,10 +112,10 @@ class App extends Component {
 						    Nashville, TN 00000-0000
 					    </li>
 					    <li className="fa-phone">(000) 000-0000</li>
-					    <li className="fa-envelope"><a href="#">information@untitled.tld</a></li>
-					    <li className="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-					    <li className="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
-					    <li className="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+					    <li className="fa-envelope"><a>information@untitled.tld</a></li>
+					    <li className="fa-twitter"><a>twitter.com/untitled-tld</a></li>
+					    <li className="fa-facebook"><a>facebook.com/untitled-tld</a></li>
+					    <li className="fa-instagram"><a>instagram.com/untitled-tld</a></li>
 				    </ul>
 				    <ul className="copyright">
 					    <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
