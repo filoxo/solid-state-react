@@ -3,19 +3,41 @@ import 'font-awesome/css/font-awesome.css';
 import './App.css';
 import Page from './components/Page';
 import Header from './components/Header';
-import MenuNav from './components/MenuNav';
+import { Menu, MenuTrigger } from './components/Menu';
 import Card from './components/Card';
 import Section from './components/Section';
 import Spotlight from './components/Spotlight';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {showMenu: false}
+		this.toggleMenu = this.toggleMenu.bind(this)
+	}
+	toggleMenu(state) {
+		const showMenu = state || false;
+		this.setState({showMenu})
+	}
   render() {
     return (
 	    <Page>
 		    <Header>
 			    <h1>Solid State</h1>
-					<MenuNav/>
+			    <MenuTrigger onClick={() => this.toggleMenu(true)}/>
 		    </Header>
+		    {
+		    	this.state.showMenu &&
+			    <Menu closePortal={() => this.toggleMenu(false)}>
+				    <h2>Menu</h2>
+				    <ul className="links">
+					    <li><a href="index.html">Home</a></li>
+					    <li><a href="generic.html">Generic</a></li>
+					    <li><a href="elements.html">Elements</a></li>
+					    <li><a href="#">Log In</a></li>
+					    <li><a href="#">Sign Up</a></li>
+				    </ul>
+			    </Menu>
+		    }
 		    <section id="banner">
 			    <div className="inner">
 				    <div className="logo"><span className="icon fa-diamond"></span></div>
