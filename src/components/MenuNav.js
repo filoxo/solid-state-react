@@ -12,7 +12,7 @@ class Modal extends Component {
 	}
 	render() {
 		return (
-			<div className="backdrop" onClick={this.props.closePortal}>
+			<div className="backdrop">
 				<nav>
 					<FocusTrap>
 						<div className="menu focus-trap">
@@ -41,10 +41,10 @@ class MenuNav extends Component {
     	<span className="menuNav">
 		    <button className="menuTrigger" type="button" onClick={() => this.toggleMenu(true)}>Menu</button>
 		    {this.state.showMenu &&
-		    <Portal closeOnEsc={true}>
+		    <Portal>
 			    <Modal closePortal={() => this.toggleMenu(false)}>
 				    <h2>Menu</h2>
-				    <ul className="links" autoFocus>
+				    <ul className="links">
 					    <li><a href="index.html">Home</a></li>
 					    <li><a href="generic.html">Generic</a></li>
 					    <li><a href="elements.html">Elements</a></li>
