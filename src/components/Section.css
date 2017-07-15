@@ -90,7 +90,6 @@
 		bottom: -4.75em;
 	}
 	.SectionContent {
-		margin: 0 auto;
 		padding: 3em 0;
 	}
 }
@@ -110,5 +109,8 @@
 	.Section[class*="style"].right::after,
 	.Section[class*="style"].left::after{
 		bottom: -6.5em;
+	}
+	.SectionContent {
+		margin: 0 auto;
 	}
 }
