@@ -103,7 +103,7 @@ class App extends Component {
 						    <textarea name="message" id="message" rows="4" />
 					    </div>
 							<div>
-								<input type="submit" value="Send Message" />
+								<button type="submit">Send Message</button>
 							</div>
 				    </form>
 				    <ul className="contact">
