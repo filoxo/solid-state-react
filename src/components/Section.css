@@ -4,7 +4,7 @@
 	position: relative;
 }
 .SectionContent {
-	margin: 0 auto;
+	margin: 0 2em;
 	max-width: 55em;
 	padding: 2em 0;
 }
@@ -90,6 +90,7 @@
 		bottom: -4.75em;
 	}
 	.SectionContent {
+		margin: 0 auto;
 		padding: 3em 0;
 	}
 }
