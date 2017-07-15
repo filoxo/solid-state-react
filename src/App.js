@@ -7,6 +7,7 @@ import { Menu, MenuTrigger } from './components/Menu';
 import Card from './components/Card';
 import Section from './components/Section';
 import Spotlight from './components/Spotlight';
+import Copyright from './components/Copyright';
 
 class App extends Component {
 	constructor(props) {
@@ -117,9 +118,10 @@ class App extends Component {
 					    <li className="fa-facebook"><a>facebook.com/untitled-tld</a></li>
 					    <li className="fa-instagram"><a>instagram.com/untitled-tld</a></li>
 				    </ul>
-				    <ul className="copyright">
-					    <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				    </ul>
+				    <Copyright>
+					    <p>&copy; Untitled Inc. All rights reserved.</p>
+					    <p>Design: <a href="http://html5up.net">HTML5 UP</a></p>
+				    </Copyright>
 			    </div>
 		    </footer>
 	    </Page>
