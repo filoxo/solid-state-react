@@ -2627,18 +2627,6 @@
 			opacity: 0.25;
 		}
 
-		@media screen and (max-width: 640px) {
-
-			input[type="submit"],
-			input[type="reset"],
-			input[type="button"],
-			button,
-			.button {
-				padding: 0;
-			}
-
-		}
-
 /* Features */
 
 	.features {
