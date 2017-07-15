@@ -6,10 +6,10 @@ body.blur > #root {
 }
 
 .menu {
-	padding: 1.5em;
 	background: #4c5c96;
 	border-radius: 5px;
 	max-width: 100%;
+	padding: 1.5em;
 	position: relative;
 	text-align: center;
 	width: 18em;
@@ -19,11 +19,11 @@ body.blur > #root {
 	align-items:center;
 	background: rgba(46, 49, 65, 0.8);
 	display: flex;
-	justify-content: center;
 	height: 100vh;
+	justify-content: center;
+	left: 0;
 	position: fixed;
 	top: 0;
-	left: 0;
 	width: 100vw;
 	z-index: 2;
 }
@@ -66,8 +66,8 @@ body.blur > #root {
 }
 
 .menu .links li a {
-	border-radius: 5px;
 	border: 0;
+	border-radius: 5px;
 	display: block;
 	font-family: Raleway, Helvetica, sans-serif;
 	font-size: 0.8em;
