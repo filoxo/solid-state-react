@@ -9,4 +9,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 - :gem: [HTML5 UP's Solid State theme](https://html5up.net/solid-state)
 - :hearts: React
 - :car: create-react-app powered
-- :construction: Components (WIP)
+- :nut_and_bolt: Components
+  - Card
+  - Header
+  - Menu
+  - Page
+  - Section
+  - Spotlight
+  - more to come...
