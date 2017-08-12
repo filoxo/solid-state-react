@@ -48,37 +48,37 @@ class App extends Component {
 		    </section>
 		    <main id="wrapper">
 			    <Section id="one" style1 right>
-				    <Spotlight img="https://unsplash.it/450/450/?random" title="Magna arcu feugiat" desc="Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus." to="/noneya"/>
+				    <Spotlight img="https://placeimg.com/450/450/tech" title="Magna arcu feugiat" desc="Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus." to="/noneya"/>
 			    </Section>
 			    <Section id="two" style2 left>
-				    <Spotlight left img="https://unsplash.it/449/449/?random" title="asdfasdfasdfasdf" desc="Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus." to="/noneya"/>
+				    <Spotlight left img="https://placeimg.com/445/445/tech" title="asdfasdfasdfasdf" desc="Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus." to="/noneya"/>
 			    </Section>
 			    <Section id="three" style3 right>
-				    <Spotlight img="https://unsplash.it/448/448/?random" title="Nullam dignissim" desc="Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus." to="/noneya"/>
+				    <Spotlight img="https://placeimg.com/440/440/tech" title="Nullam dignissim" desc="Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus." to="/noneya"/>
 			    </Section>
 			    <Section id="four">
 				    <h2 className="major">Vitae phasellus</h2>
 				    <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 				    <section className="features">
 					    <article>
-						    <a className="image"><img src="https://unsplash.it/575/330/?random" alt="" /></a>
+						    <a className="image"><img src="https://placeimg.com/575/330/tech" alt="" /></a>
 						    <h3 className="major">Sed feugiat lorem</h3>
 						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 						    <a className="special">Learn more</a>
 					    </article>
 					    <article>
-						    <a className="image"><img src="https://unsplash.it/575/331/?random" alt="" /></a>
+						    <a className="image"><img src="https://placeimg.com/575/325/tech" alt="" /></a>
 						    <h3 className="major">Nisl placerat</h3>
 						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 						    <a className="special">Learn more</a>
 					    </article>
 					    <article>
-						    <a className="image"><img src="https://unsplash.it/575/332/?random" alt="" /></a>
+						    <a className="image"><img src="https://placeimg.com/570/330/tech" alt="" /></a>
 						    <h3 className="major">Ante fermentum</h3>
 						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 						    <a className="special">Learn more</a>
 					    </article>
-					    <Card imgSrc="https://unsplash.it/575/333/?random" imgAlt="test image alt" title="Test title here" desc="Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices." to="/nowhere"/>
+					    <Card imgSrc="https://placeimg.com/575/335/tech" imgAlt="test image alt" title="Test title here" desc="Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices." to="/nowhere"/>
 				    </section>
 				    <ul className="actions">
 					    <li><a className="button">Browse All</a></li>
