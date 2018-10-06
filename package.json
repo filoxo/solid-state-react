@@ -14,12 +14,22 @@
     "react-dom": "^15.6.1",
     "react-focus-trap": "^2.4.0",
     "react-portal-minimal": "^4.0.2",
-    "react-scripts": "1.0.10"
+    "react-scripts": "2.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier **/*.js --write --no-semi --single-quote --trailing-comma es5 --tab-width 2"
+  },
+  "devDependencies": {
+    "husky": "^1.1.1",
+    "lint-staged": "^7.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
   }
 }
