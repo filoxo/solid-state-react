@@ -17,3 +17,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
   - Section
   - Spotlight
   - more to come...
+
+### Development
+
+- Clone this project
+- Navigate into the directory (eg. `cd solid-state-react`)
+- If you haven't installed yet:
+	- Install dependencies (eg `yarn install`)
+- Run locally (eg. `yarn start`)

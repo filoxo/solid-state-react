@@ -10,9 +10,9 @@
   "private": true,
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-focus-trap": "^2.4.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-focus-trap": "^2.6.0",
     "react-portal-minimal": "^4.0.2",
     "react-scripts": "2.0.4"
   },
@@ -31,5 +31,11 @@
     "hooks": {
       "pre-commit": "npm run format"
     }
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
