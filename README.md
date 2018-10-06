@@ -23,5 +23,5 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 - Clone this project
 - Navigate into the directory (eg. `cd solid-state-react`)
 - If you haven't installed yet:
-	- Install [yarn](https://yarnpkg.com/en/docs/install)
+	- Install dependencies (eg `yarn install`)
 - Run locally (eg. `yarn start`)
