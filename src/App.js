@@ -40,10 +40,10 @@ class App extends Component {
                 <a href="elements.html">Elements</a>
               </li>
               <li>
-                <a>Log In</a>
+                <button type="button">Log In</button>
               </li>
               <li>
-                <a>Sign Up</a>
+                <button type="button">Sign Up</button>
               </li>
             </ul>
           </Menu>
