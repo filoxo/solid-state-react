@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+// @flow
+import * as React from 'react'
 import 'font-awesome/css/font-awesome.css'
 import './App.css'
 import Page from './components/Page'
@@ -9,14 +10,16 @@ import Section from './components/Section'
 import Spotlight from './components/Spotlight'
 import Copyright from './components/Copyright'
 
-class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { showMenu: false }
-    this.toggleMenu = this.toggleMenu.bind(this)
+type Props = {}
+type State = {
+  showMenu: boolean,
+}
+
+class App extends React.Component<Props, State> {
+  state = { 
+    showMenu: false,
   }
-  toggleMenu(state) {
-    const showMenu = state || false
+  toggleMenu = (showMenu: boolean = false): void => {
     this.setState({ showMenu })
   }
   render() {

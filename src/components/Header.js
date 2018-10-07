@@ -1,8 +1,16 @@
-import React, { Component } from 'react'
+// @flow
+import * as React from 'react'
 import './Header.css'
 
-class Header extends Component {
-  constructor(props) {
+type Props = {
+  children: React.Node,
+}
+type State = {
+  showHeader: boolean,
+}
+
+class Header extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props)
     this.state = { showHeader: false }
     this.handleScroll = this.handleScroll.bind(this)
@@ -11,9 +19,10 @@ class Header extends Component {
     let { scrollTop } = event.srcElement.body
     this.setState({ showHeader: scrollTop > 50 })
   }, 100)
-  throttle(callback, wait, context = this) {
+  // TODO: find better typings for context, callbackArgs
+  throttle(callback: function, wait: number, context: any = this) {
     let timeout = null
-    let callbackArgs = null
+    let callbackArgs: any = null
     const later = () => {
       callback.apply(context, callbackArgs)
       timeout = null
