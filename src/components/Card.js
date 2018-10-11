@@ -1,7 +1,17 @@
-import React, { Component } from 'react'
+// @flow
+import * as React from 'react'
 import './Card.css'
 
-export default class Card extends Component {
+type Props = {
+  imgSrc: string,
+  imgAlt: string,
+  title: string,
+  desc: string,
+  to: string,
+}
+type State = {}
+
+export default class Card extends React.Component<Props, State> {
   render() {
     const { imgSrc, imgAlt, title, desc, to } = this.props
     let img = null

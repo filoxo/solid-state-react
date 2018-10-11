@@ -21,9 +21,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "format": "prettier src/**/*.js --write --no-semi --single-quote --trailing-comma es5 --tab-width 2"
+    "format": "prettier src/**/*.js --write --no-semi --single-quote --trailing-comma es5 --tab-width 2 --parser flow"
   },
   "devDependencies": {
+    "flow-bin": "^0.82.0",
     "husky": "^1.1.1",
     "lint-staged": "^7.3.0"
   },

@@ -1,7 +1,11 @@
 import React from 'react'
 import './Copyright.css'
 
-const Copyright = ({ children }) => {
+type Props = {
+  children: React.Node,
+}
+
+const Copyright = ({ children }: Props) => {
   return <small className="Copyright">{children}</small>
 }
 
