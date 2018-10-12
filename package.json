@@ -26,7 +26,8 @@
   "devDependencies": {
     "flow-bin": "^0.82.0",
     "husky": "^1.1.1",
-    "lint-staged": "^7.3.0"
+    "lint-staged": "^7.3.0",
+    "react-testing-library": "^5.2.0"
   },
   "husky": {
     "hooks": {
