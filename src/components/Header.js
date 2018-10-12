@@ -20,7 +20,7 @@ class Header extends React.Component<Props, State> {
     this.setState({ showHeader: scrollTop > 50 })
   }, 100)
   // TODO: find better typings for context, callbackArgs
-  throttle(callback: function, wait: number, context: any = this) {
+  throttle(callback: Function, wait: number, context: any = this) {
     let timeout = null
     let callbackArgs: any = null
     const later = () => {
