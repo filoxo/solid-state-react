@@ -5,8 +5,8 @@ type Props = {
   children: React.Node,
 }
 
-const Copyright = ({ children }: Props) => {
-  return <small className="Copyright">{children}</small>
-}
+const Copyright = ({ children }: Props) => (
+  <small className="Copyright">{children}</small>
+)
 
 export default Copyright
