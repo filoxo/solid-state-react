@@ -98,45 +98,36 @@ class App extends React.Component<Props, State> {
               in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
             </p>
             <section className="features">
-              <article>
-                <a className="image">
-                  <img src="https://unsplash.it/575/330/?random" alt="" />
-                </a>
-                <h3 className="major">Sed feugiat lorem</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                  nulla dignissim dapibus ultrices.
-                </p>
-                <a className="special">Learn more</a>
-              </article>
-              <article>
-                <a className="image">
-                  <img src="https://unsplash.it/575/331/?random" alt="" />
-                </a>
-                <h3 className="major">Nisl placerat</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                  nulla dignissim dapibus ultrices.
-                </p>
-                <a className="special">Learn more</a>
-              </article>
-              <article>
-                <a className="image">
-                  <img src="https://unsplash.it/575/332/?random" alt="" />
-                </a>
-                <h3 className="major">Ante fermentum</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                  nulla dignissim dapibus ultrices.
-                </p>
-                <a className="special">Learn more</a>
-              </article>
               <Card
-                imgSrc="https://unsplash.it/575/333/?random"
+                imgSrc="https://unsplash.it/575/330/?random"
+                imgAlt="test image alt"
+                title="Sed feugiat lorem"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices."
+                to="#"
+              />
+              <Card
+                imgSrc="https://unsplash.it/570/327/?random"
+                imgAlt="test image alt"
+                title="Nisl placerat"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices."
+                to="#"
+              />
+              <Card
+                imgSrc="https://unsplash.it/565/324/?random"
+                imgAlt="test image alt"
+                title="Ante fermentume"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices."
+                to="#"
+              />
+              <Card
+                imgSrc="https://unsplash.it/560/321/?random"
                 imgAlt="test image alt"
                 title="Test title here"
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices."
-                to="/nowhere"
+                to="#"
               />
             </section>
             <ul className="actions">
