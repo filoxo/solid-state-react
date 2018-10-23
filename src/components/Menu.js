@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Modal from 'react-modal';
+import Modal from 'react-modal'
 
 import FocusTrap from 'react-focus-trap'
 import './Menu.css'
@@ -27,7 +27,7 @@ class Menu extends Component {
               {children}
               <button className="close" type="button" onClick={closePortal}>
                 Close
-                </button>
+              </button>
             </div>
           </FocusTrap>
         </nav>
