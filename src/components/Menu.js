@@ -4,6 +4,8 @@ import Modal from 'react-modal'
 import FocusTrap from 'react-focus-trap'
 import './Menu.css'
 
+Modal.setAppElement('#root');
+
 class Menu extends Component {
   componentDidMount() {
     document.body.classList.add('blur')
