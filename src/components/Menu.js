@@ -7,11 +7,12 @@ import './Menu.css'
 Modal.setAppElement('#root')
 
 class Menu extends Component {
-  componentDidMount() {
-    document.body.classList.add('blur')
-  }
-  componentWillUnmount() {
-    document.body.classList.remove('blur')
+  componentDidUpdate() {
+    if (this.props.showMenu) {
+      document.body.classList.add('blur')
+    } else {
+      document.body.classList.remove('blur')
+    }
   }
   render() {
     const { showMenu, closePortal, children } = this.props
