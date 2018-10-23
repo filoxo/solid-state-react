@@ -4,7 +4,7 @@ import Modal from 'react-modal'
 import FocusTrap from 'react-focus-trap'
 import './Menu.css'
 
-Modal.setAppElement('#root');
+Modal.setAppElement('#root')
 
 class Menu extends Component {
   componentDidMount() {
