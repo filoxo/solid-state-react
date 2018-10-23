@@ -16,7 +16,6 @@ class Menu extends Component {
     return (
       <Modal
         isOpen={showMenu}
-        // onAfterOpen={this.afterOpenModal}
         onRequestClose={this.closePortal}
         className="Modal"
         overlayClassName="backdrop"
