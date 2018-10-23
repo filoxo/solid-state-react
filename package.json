@@ -10,6 +10,7 @@
   "private": true,
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "lodash.throttle": "^4.1.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-focus-trap": "^2.6.0",
