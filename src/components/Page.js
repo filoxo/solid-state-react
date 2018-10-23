@@ -1,7 +1,9 @@
 import React from 'react'
 
-const Page = props => {
-  return <div id="page-wrapper">{props.children}</div>
+type Props = {
+  children: React.Node,
 }
+
+const Page = ({ children }: Props) => <div id="page-wrapper">{children}</div>
 
 export default Page
