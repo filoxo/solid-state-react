@@ -30,7 +30,7 @@ class App extends React.Component<Props, State> {
           <MenuTrigger onClick={() => this.toggleMenu(true)} />
         </Header>
         {this.state.showMenu && (
-          <Menu closePortal={() => this.toggleMenu(false)}>
+          <Menu showMenu={this.state.showMenu} closePortal={() => this.toggleMenu(false)}>
             <h2>Menu</h2>
             <ul className="links">
               <li>
