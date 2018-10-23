@@ -16,7 +16,7 @@ type State = {
 }
 
 class App extends React.Component<Props, State> {
-  state = { 
+  state = {
     showMenu: false,
   }
   toggleMenu = (showMenu: boolean = false): void => {
@@ -29,28 +29,26 @@ class App extends React.Component<Props, State> {
           <h1>Solid State</h1>
           <MenuTrigger onClick={() => this.toggleMenu(true)} />
         </Header>
-        {this.state.showMenu && (
-          <Menu closePortal={() => this.toggleMenu(false)}>
-            <h2>Menu</h2>
-            <ul className="links">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="generic.html">Generic</a>
-              </li>
-              <li>
-                <a href="elements.html">Elements</a>
-              </li>
-              <li>
-                <button type="button">Log In</button>
-              </li>
-              <li>
-                <button type="button">Sign Up</button>
-              </li>
-            </ul>
-          </Menu>
-        )}
+        <Menu showMenu={this.state.showMenu} closePortal={() => this.toggleMenu(false)}>
+          <h2>Menu</h2>
+          <ul className="links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="generic.html">Generic</a>
+            </li>
+            <li>
+              <a href="elements.html">Elements</a>
+            </li>
+            <li>
+              <button type="button">Log In</button>
+            </li>
+            <li>
+              <button type="button">Sign Up</button>
+            </li>
+          </ul>
+        </Menu>
         <section id="banner">
           <div className="inner">
             <div className="logo">

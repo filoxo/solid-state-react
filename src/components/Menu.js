@@ -1,32 +1,39 @@
 import React, { Component } from 'react'
-import Portal from 'react-portal-minimal'
+import Modal from 'react-modal'
+
 import FocusTrap from 'react-focus-trap'
 import './Menu.css'
 
+Modal.setAppElement('#root')
+
 class Menu extends Component {
-  componentDidMount() {
-    document.body.classList.add('blur')
-  }
-  componentWillUnmount() {
-    document.body.classList.remove('blur')
+  componentDidUpdate() {
+    if (this.props.showMenu) {
+      document.body.classList.add('blur')
+    } else {
+      document.body.classList.remove('blur')
+    }
   }
   render() {
-    const { closePortal, children } = this.props
+    const { showMenu, closePortal, children } = this.props
     return (
-      <Portal closePortal={closePortal}>
-        <div className="backdrop">
-          <nav>
-            <FocusTrap>
-              <div className="menu">
-                {children}
-                <button className="close" type="button" onClick={closePortal}>
-                  Close
-                </button>
-              </div>
-            </FocusTrap>
-          </nav>
-        </div>
-      </Portal>
+      <Modal
+        isOpen={showMenu}
+        onRequestClose={this.closePortal}
+        className="Modal"
+        overlayClassName="backdrop"
+      >
+        <nav>
+          <FocusTrap>
+            <div className="menu">
+              {children}
+              <button className="close" type="button" onClick={closePortal}>
+                Close
+              </button>
+            </div>
+          </FocusTrap>
+        </nav>
+      </Modal>
     )
   }
 }
