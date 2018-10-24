@@ -12,6 +12,7 @@ const Menu = ({ showMenu, closePortal, children }) => (
     className="Modal"
     overlayClassName="backdrop"
     bodyOpenClassName="blur"
+    contentLabel="Open site menu"
   >
     <nav className="menu">
       {children}
