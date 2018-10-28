@@ -4,7 +4,7 @@ import 'font-awesome/css/font-awesome.css'
 import './App.css'
 import Page from './components/Page'
 import Header from './components/Header'
-import { Menu, MenuTrigger } from './components/Menu'
+import { Menu, MenuLinks, MenuTrigger } from './components/Menu'
 import Card from './components/Card'
 import Section from './components/Section'
 import Spotlight from './components/Spotlight'
@@ -31,23 +31,13 @@ class App extends React.Component<Props, State> {
         </Header>
         <Menu showMenu={this.state.showMenu} closePortal={() => this.toggleMenu(false)}>
           <h2>Menu</h2>
-          <ul className="links">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="generic.html">Generic</a>
-            </li>
-            <li>
-              <a href="elements.html">Elements</a>
-            </li>
-            <li>
-              <button type="button">Log In</button>
-            </li>
-            <li>
-              <button type="button">Sign Up</button>
-            </li>
-          </ul>
+          <MenuLinks>
+            <a href="index.html">Home</a>
+            <a href="generic.html">Generic</a>
+            <a href="elements.html">Elements</a>
+            <button type="button">Log In</button>
+            <button type="button">Sign Up</button>
+          </MenuLinks>
         </Menu>
         <section id="banner">
           <div className="inner">
