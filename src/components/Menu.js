@@ -24,9 +24,11 @@ const Menu = ({ showMenu, closePortal, children }) => (
 )
 
 const MenuLinks = ({ children }) => (
-  <ul className={styles.links}>{
-      children.map(child => <li className={styles.link}>{child}</li>)
-  }</ul>
+  <ul className={styles.links}>
+    {children.map(child => (
+      <li className={styles.link}>{child}</li>
+    ))}
+  </ul>
 )
 
 const MenuTrigger = ({ onClick }) => (
