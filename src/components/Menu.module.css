@@ -1,7 +1,7 @@
-body.blur {
+.blur {
 	overflow: hidden;
 }
-body.blur > #root {
+.blur :global(#root) {
 	filter: blur(2px);
 }
 
@@ -27,8 +27,7 @@ body.blur > #root {
 	width: 100vw;
 	z-index: 2;
 }
-
-.menu .close {
+.close {
 	background: url("/images/close.svg");
 	background-size: cover;
 	border: 0;
@@ -54,18 +53,17 @@ body.blur > #root {
 	border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 	padding-bottom: 1em;
 }
-
-.menu .links {
+.links {
 	list-style: none;
 	margin-bottom: 0;
 	padding: 0;
 }
 
-.menu .links li {
+.link {
 	padding: 0;
 }
 
-.menu .links li a {
+.link a {
 	border: 0;
 	border-radius: 5px;
 	display: block;
@@ -77,8 +75,7 @@ body.blur > #root {
 	padding: 0.75em 0;
 	text-transform: uppercase;
 }
-
-.menuBtn{
+.trigger{
 	box-shadow: none;
 	height: 3em;
 	line-height: 1;
@@ -89,13 +86,13 @@ body.blur > #root {
 	white-space: nowrap;
 	width: 4em;
 }
-.menuBtn::after{
+.trigger::after{
 	content: '\f0c9';
 	font-family: FontAwesome;
 	margin-left: 1.75em;
 }
 
-.Modal {
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,7 +104,7 @@ body.blur > #root {
 }
 
 @media screen and (min-width: 640px) {
-	.menuBtn {
+	.trigger {
 		border-radius: 5px;
 		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
 		margin-right: 0;
@@ -115,7 +112,7 @@ body.blur > #root {
 		text-indent: 0;
 		width: auto;
 	}
-	.menuBtn::after{
+	.trigger::after{
 		margin-left: .75em;
 	}
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Modal from 'react-modal'
 
-import './Menu.css'
+import styles from './Menu.module.css'
 
 Modal.setAppElement('#root')
 
@@ -9,25 +9,31 @@ const Menu = ({ showMenu, closePortal, children }) => (
   <Modal
     isOpen={showMenu}
     onRequestClose={closePortal}
-    className="Modal"
-    overlayClassName="backdrop"
-    bodyOpenClassName="blur"
+    className={styles.modal}
+    overlayClassName={styles.backdrop}
+    bodyOpenClassName={styles.blur}
     contentLabel="Open site menu"
   >
-    <nav className="menu">
+    <nav className={styles.menu}>
       {children}
-      <button className="close" type="button" onClick={closePortal}>
+      <button className={styles.close} type="button" onClick={closePortal}>
         Close
       </button>
     </nav>
   </Modal>
 )
 
+const MenuLinks = ({ children }) => (
+  <ul className={styles.links}>{
+      children.map(child => <li className={styles.link}>{child}</li>)
+  }</ul>
+)
+
 const MenuTrigger = ({ onClick }) => (
-  <button className="menuBtn" type="button" onClick={onClick}>
+  <button className={styles.trigger} type="button" onClick={onClick}>
     Menu
   </button>
 )
 
 export default Menu
-export { Menu, MenuTrigger }
+export { Menu, MenuLinks, MenuTrigger }
