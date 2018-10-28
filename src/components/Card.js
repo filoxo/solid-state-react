@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react'
-import './Card.css'
+import styles from './Card.module.css'
 
 type Props = {
   imgSrc: ?string,
@@ -22,18 +22,18 @@ export default class Card extends React.Component<Props, State> {
         )
       const imgEl = <img src={imgSrc} alt={imgAlt} />
       img = to ? (
-        <a href={to} className="image">
+        <a href={to} className={`${styles.image}`}>
           {imgEl}
         </a>
       ) : (
-        <div className="image">{imgEl}</div>
+        <div className={`${styles.image}`}>{imgEl}</div>
       )
     }
 
     return (
-      <article className="Card">
+      <article className={`${styles.card}`}>
         {img}
-        <div className="CardContent">
+        <div className={`${styles.content}`}>
           {title && <h3 className="major">{title}</h3>}
           {desc && <p>{desc}</p>}
           {to && (
