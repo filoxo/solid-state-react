@@ -16,8 +16,8 @@ class Header extends React.Component<Props, State> {
     this.state = { showHeader: false }
   }
   handleScroll = (): void => {
-    const showHeader: boolean = document.scrollingElement
-      ? document.scrollingElement.scrollTop > 50
+    const showHeader: boolean = document.documentElement
+      ? document.documentElement.scrollTop > 50
       : true
     this.setState({ showHeader })
   }
